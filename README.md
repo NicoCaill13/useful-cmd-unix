@@ -81,3 +81,15 @@ sudo systemctl stop gitlab-runsvdir.service
 sudo systemctl start gitlab-runsvdir.service
 sudo gitlab-ctl restart
 ```
+
+## up or down AWS develop EC2
+```shell script
+./scripts/upAndDownAws/init.sh up || down
+```
+
+## change AWS EC2 instance type
+tag:slug = api prod  
+newInstanceType = m5a.2xlarge
+```shell script
+./scripts/changeInstanceType/init.sh tag:slug newInstanceType
+```
