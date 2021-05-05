@@ -93,3 +93,16 @@ newInstanceType = m5a.2xlarge
 ```shell script
 ./scripts/changeInstanceType/init.sh tag:slug newInstanceType
 ```
+
+## add VPN server
+```shell script
+sudo apt update
+sudo apt upgrade -y
+mkdir vpn
+cd vpn/
+wget https://git.io/vpn -O openvpn-install.sh
+
+# make executable and execut
+chmod +x openvpn-install.sh
+sudo ./openvpn-install.sh
+```
