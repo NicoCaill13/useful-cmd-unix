@@ -106,3 +106,16 @@ wget https://git.io/vpn -O openvpn-install.sh
 chmod +x openvpn-install.sh
 sudo ./openvpn-install.sh
 ```
+
+## add ovpn file on client
+```shell script
+sudo apt update
+sudo apt upgrade -y
+apt install openvpn -y
+
+# copy file from remote to local
+scp remote:~/client-vpn.ovpn ~/
+
+# connect
+sudo openvpn client-vpn.ovpn
+```
