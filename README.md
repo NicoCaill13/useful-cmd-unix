@@ -1,5 +1,27 @@
 # Useful unix command
 
+## file permission
+4 = read  
+2 = write  
+1 = execute  
+
+```shell script
+chmod 100 ~/.ssh/authorized_keys
+---x------ 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
+
+chmod 200 ~/.ssh/authorized_keys
+--w------- 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
+
+chmod 400 ~/.ssh/authorized_keys
+-r-------- 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
+
+chmod 600 ~/.ssh/authorized_keys
+-rw------- 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
+
+chmod 700 ~/.ssh/authorized_keys
+-rwx------ 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
+``̀` 
+
 ## ajouter utilisateur debian
 ```shell script
 adduser --force-badname nicocaill
