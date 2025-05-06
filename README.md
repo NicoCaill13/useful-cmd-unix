@@ -20,7 +20,8 @@ chmod 600 ~/.ssh/authorized_keys
 
 chmod 700 ~/.ssh/authorized_keys
 -rwx------ 1 nicolas.cailleux domain users 1161 21 févr. 08:35 authorized_keys
-``̀` 
+``` 
+
 
 ## ajouter utilisateur debian
 ```shell script
